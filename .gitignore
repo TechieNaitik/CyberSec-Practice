@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache/
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Environment variables / secrets ---
+.env
+*.env
+
+# --- Documents related to the project ---
+Docs/
+
+# --- Singular Files ---
+update_tree.py
