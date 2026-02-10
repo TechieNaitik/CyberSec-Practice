@@ -1,4 +1,4 @@
-# Cyber Intro
+# CyberSec-Practice
 
 This repository contains a growing collection of **cybersecurity-related scripts and projects** developed for learning, experimentation, and practical use.  
 The focus is on networking, cryptography, password security, and reconnaissance utilities.
@@ -12,6 +12,7 @@ The focus is on networking, cryptography, password security, and reconnaissance 
 ## Repository Structure
 
 <!-- AUTO-TREE:START -->
+
 ```text
 CyberSec-Practice
 ├── Scripts
@@ -21,20 +22,24 @@ CyberSec-Practice
 │   ├── Password_Generator.py
 │   ├── Password_Manager.py
 │   └── WhoIs.py
+├── Sentinel/
 ├── .gitignore
 └── README.md
 ```
+
 <!-- AUTO-TREE:END -->
 
 ## Scripts
 
 ### 🔐 Caesar_Cipher.py
+
 A basic implementation of the **Caesar Cipher** encryption and decryption technique.  
 Demonstrates fundamental cryptographic concepts such as substitution ciphers and key-based shifting.
 
 ---
 
 ### 🌐 Nmap_PortScanner.py
+
 A Python-based port scanner that leverages **Nmap** to identify open ports and services on a target system.  
 Useful for learning network reconnaissance and basic penetration testing workflows.
 
@@ -43,7 +48,9 @@ Useful for learning network reconnaissance and basic penetration testing workflo
 ---
 
 ### 🔑 Password_Checker.py
+
 Checks password strength based on predefined rules such as:
+
 - Length
 - Character variety
 - Common password patterns
@@ -53,7 +60,9 @@ Helps understand password security and validation mechanisms.
 ---
 
 ### 🔐 Password_Generator.py
+
 Generates strong, random passwords using configurable parameters like:
+
 - Length
 - Character sets (uppercase, lowercase, numbers, symbols)
 
@@ -62,6 +71,7 @@ Useful for secure credential creation.
 ---
 
 ### 🗄️ Password_Manager.py
+
 A simple password management utility to store and retrieve credentials securely.  
 Designed as a learning project to explore secure storage concepts.
 
@@ -70,13 +80,34 @@ Designed as a learning project to explore secure storage concepts.
 ---
 
 ### 🌍 WhoIs.py
+
 Performs **WHOIS lookups** to retrieve domain registration and ownership information.  
 Introduces basic OSINT and reconnaissance techniques.
 
 ---
 
+## Projects
+
+### 1. Sentinel – Password Strength & Hygiene Analyzer
+
+**Sentinel** is a modern, privacy-focused web application for password security analysis.  
+It goes beyond simple length checks by using information theory, pattern detection, and real-world breach data.
+
+**Key Features:**
+
+- **Advanced Entropy & Pattern Analysis:** Calculates true information density and identifies weak patterns (e.g., "1234", keyboard walks).
+- **Breach Check (k-Anonymity):** Safely checks if a password has appeared in known data breaches without ever sending the password over the network.
+- **Cracking Simulation:** Estimates time-to-crack for modern GPU rigs.
+- **Educational Tools:** Includes a **Secure Hashing visualizer** (salting/hashing demo) and a **Passphrase Generator**.
+
+**Tech Stack:** React 18, TypeScript, Vite, Tailwind CSS, Framer Motion.
+
+---
+
 ## Technologies Used
+
 - **Python 3.13**
 - **Nmap**
-- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, etc.)
+- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`)
+
 ---
