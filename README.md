@@ -1,6 +1,6 @@
-# CyberSec-Practice
+# CyberSec-Scripts
 
-This repository contains a growing collection of **cybersecurity-related scripts and projects** developed for learning, experimentation, and practical use.  
+This repository contains a growing collection of **cybersecurity-related scripts** developed for learning, experimentation, and practical use.  
 The focus is on networking, cryptography, password security, and reconnaissance utilities.
 
 > ⚠️ **Disclaimer**  
@@ -11,23 +11,17 @@ The focus is on networking, cryptography, password security, and reconnaissance 
 
 ## Repository Structure
 
-<!-- AUTO-TREE:START -->
-
 ```text
 CyberSec-Practice
-├── Scripts
-│   ├── Caesar_Cipher.py
-│   ├── Nmap_PortScanner.py
-│   ├── Password_Checker.py
-│   ├── Password_Generator.py
-│   ├── Password_Manager.py
-│   └── WhoIs.py
-├── Sentinel/
+├── Caesar_Cipher.py
+├── Nmap_PortScanner.py
+├── Password_Checker.py
+├── Password_Generator.py
+├── Password_Manager.py
+├── WhoIs.py
 ├── .gitignore
 └── README.md
 ```
-
-<!-- AUTO-TREE:END -->
 
 ## Scripts
 
@@ -83,24 +77,6 @@ Designed as a learning project to explore secure storage concepts.
 
 Performs **WHOIS lookups** to retrieve domain registration and ownership information.  
 Introduces basic OSINT and reconnaissance techniques.
-
----
-
-## Projects
-
-### 1. Sentinel – Password Strength & Hygiene Analyzer
-
-**Sentinel** is a modern, privacy-focused web application for password security analysis.  
-It goes beyond simple length checks by using information theory, pattern detection, and real-world breach data.
-
-**Key Features:**
-
-- **Advanced Entropy & Pattern Analysis:** Calculates true information density and identifies weak patterns (e.g., "1234", keyboard walks).
-- **Breach Check (k-Anonymity):** Safely checks if a password has appeared in known data breaches without ever sending the password over the network.
-- **Cracking Simulation:** Estimates time-to-crack for modern GPU rigs.
-- **Educational Tools:** Includes a **Secure Hashing visualizer** (salting/hashing demo) and a **Passphrase Generator**.
-
-**Tech Stack:** React 18, TypeScript, Vite, Tailwind CSS, Framer Motion.
 
 ---
 
