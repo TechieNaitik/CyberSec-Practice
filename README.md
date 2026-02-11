@@ -80,6 +80,16 @@ Introduces basic OSINT and reconnaissance techniques.
 
 ---
 
+### 🛡️ File_Integrity_Checker.py
+
+A security tool that calculates **SHA-256 hashes** of files to detect unauthorized modifications.  
+Demonstrates the concept of **Data Integrity** and how hashing differs from encryption.
+
+- **Mode 1:** Creates a baseline (snapshot) of file hashes.
+- **Mode 2:** Compares current files against the baseline to detect tampering.
+
+---
+
 ## Technologies Used
 
 - **Python 3.13**
