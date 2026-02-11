@@ -13,7 +13,9 @@ def calculate_hash(filepath):
         return sha256_hash.hexdigest()
     except FileNotFoundError:
         return None
-
+    except (PermissionError, IOError) as e:
+        print(f"Warning: Could not read {filepath}: {e}")
+        return None
 def update_baseline(directory, baseline_file="baseline.json"):
     """Creates a new baseline of file hashes."""
     baseline = {}
@@ -76,11 +78,10 @@ def main():
         decision = input("Enter your decision(a/b): ")
         if decision == 'a':
             target_dir = input("Enter the directory path you want to scan: ")
-        if decision == 'b':
+        elif decision == 'b':
             pass
         else:
-            print("Invalid selection. Defaulting to current directory.")
-        
+            print("Invalid selection. Defaulting to current directory.")        
         update_baseline(target_dir)
     elif choice == '2':
         check_integrity()

@@ -94,6 +94,6 @@ Demonstrates the concept of **Data Integrity** and how hashing differs from encr
 
 - **Python 3.13**
 - **Nmap**
-- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`)
+- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`)
 
 ---
