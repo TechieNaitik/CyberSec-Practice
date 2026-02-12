@@ -14,6 +14,13 @@ The focus is on networking, cryptography, password security, and reconnaissance 
 ```text
 CyberSec-Practice
 ├── Caesar_Cipher.py
+├── File Integrity Checker/
+│   ├── Baseline.json
+│   └── File_Integrity_Checker.py
+├── Web Directory Enumerator/
+│   ├── common_dir.txt
+│   ├── Web_Dir_Enum.py
+│   └── Dummy_Website/
 ├── Nmap_PortScanner.py
 ├── Password_Checker.py
 ├── Password_Generator.py
@@ -90,10 +97,30 @@ Demonstrates the concept of **Data Integrity** and how hashing differs from encr
 
 ---
 
-## Technologies Used
+### 🕵️ Web_Dir_Enum.py
 
+A reconnaissance tool that performs directory brute-forcing to discover hidden paths and sensitive files on a web server. Demonstrates how automated fuzzing can uncover "security through obscurity" vulnerabilities by identifying unlinked resources.
+
+Usage
+- Navigate to the Dummy_Website directory in your terminal and start the local server: 
+```bash
+cd 'Web Directory Enumerator'
+cd Dummy_Website
+python -m http.server 8000
+```
+- Open another terminal and run:
+```bash
+cd 'Web Directory Enumerator'
+python Web_Dir_Enum.py 127.0.0.1:8000 common_dir.txt
+```
+
+> ⚠️ Warning: Usage of Web_Dir_Enum.py for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable laws.
+
+---
+
+## Technologies Used
 - **Python 3.13**
 - **Nmap**
-- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`)
-
+- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`,
+                    `requests`, `sys`)
 ---
