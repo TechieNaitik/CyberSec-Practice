@@ -18,8 +18,5 @@ env/
 .env
 *.env
 
-# --- Documents related to the project ---
-Docs/
-
 # --- Singular Files ---
 Git_Commands.md
