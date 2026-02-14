@@ -21,6 +21,9 @@ CyberSec-Practice
 │   ├── common_dir.txt
 │   ├── Web_Dir_Enum.py
 │   └── Dummy_Website/
+├── Hash Cracker/
+│   ├── passlist.txt
+│   └── Hash_Cracker.py
 ├── Nmap_PortScanner.py
 ├── Password_Checker.py
 ├── Password_Generator.py
@@ -154,6 +157,30 @@ A beginner-friendly network packet sniffer using the **Scapy** library. This scr
    - Press Ctrl+C to stop the capture gracefully.
 
 >⚠️ This tool is for educational purposes and network troubleshooting. Always ensure you have permission to monitor the network you are on.
+
+---
+
+## 🔓 Hash_Cracker.py
+
+A simulation tool for performing dictionary attacks against hashed passwords (MD5, SHA1, SHA256). Demonstrates how weak passwords can be reversed using pre-computed wordlists and highlights the difference between one-way hashing and reversible encryption.
+
+### How to Use
+
+1. Run the program using the command:
+
+    ```bash
+    cd 'Hash Cracker'
+    python Hash_Cracker.py
+    ```
+
+2. Enter a hash you want to crack.
+
+3. Enter the hash type(MD5, SHA1 or SHA256).
+
+4. Enter the path of the passlist file(.txt) to check against possible passwords.
+
+> ⚠️ Ethical Disclaimer: This tool is for educational purposes only. Do not use it against unauthorized targets
+
 ---
 
 ## Technologies Used
