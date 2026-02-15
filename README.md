@@ -12,6 +12,7 @@ CyberSec-Scripts
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── requirements.txt
 │
 ├── Cryptography/
 │   ├──Caesar_Cipher.py
@@ -32,9 +33,12 @@ CyberSec-Scripts
 │   └── WhoIs.py
 │
 ├── System Security/
-│   └── File Integrity Checker/
-│       ├── baseline.json
-│       └── File_Integrity_Checker.py
+│   ├── File Integrity Checker/
+│   │   ├── baseline.json
+│   │   └── File_Integrity_Checker.py
+│   └── Keylogger/
+│       ├── keylog.txt
+│       └── Keylogger.py
 │
 ├── Utilities/
 │   ├── Password_Checker.py
@@ -217,6 +221,37 @@ python File_Integrity_Checker.py
 
 ---
 
+### ⌨️ Keylogger.py
+
+A Python-based keylogger that listens for and records keyboard events into a local file.  
+Demonstrates how input listeners work and the importance of system security against unauthorized monitoring.
+
+**Features:**
+
+- Captures alphanumeric and special keys
+- Logs keystrokes to `keylog.txt`
+- Runs as a background listener
+- Safe exit using the `Esc` key
+
+> Requires the **pynput** library to be installed.
+
+**Usage:**
+
+1. Install dependencies:
+
+   ```powershell
+   pip install pynput
+   ```
+
+2. Run the program:
+
+   ```powershell
+   cd "System Security\Keylogger"
+   python Keylogger.py
+   ```
+
+---
+
 ### 🔑 Password_Checker.py
 
 Checks password strength based on predefined rules such as:
@@ -315,7 +350,7 @@ python Web_Dir_Enum.py 127.0.0.1:8000 common_dir.txt
 
 - **Python 3.13**
 - **Nmap**
-- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`, `python-nmap`, `requests`, `sys`, `scapy`, `pillow`, `exifread`)
+- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`, `python-nmap`, `requests`, `sys`, `scapy`, `pillow`, `exifread`, `pynput`, `ipwhois`)
 
 ---
 

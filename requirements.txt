@@ -1,0 +1,7 @@
+exifread
+Pillow
+pynput
+scapy
+ipwhois
+python-nmap
+requests
