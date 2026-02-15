@@ -19,7 +19,12 @@ CyberSec-Scripts
 │       ├── Pic.jpg (Normal Image)
 │       ├── secret.png (Encoded Image)
 │       └── Steganography.py
+|
 ├── Forensics/
+│   └── Metadata Extractor/
+│       ├── IMG_1971.jpeg
+│       ├── IMG_1972.jpeg
+│       └──  Metadata_Extractor.py
 │
 ├── Network Tools/
 │   ├── Nmap_PortScanner.py
@@ -100,6 +105,37 @@ This script demonstrates how to conceal data within digital media by modifying t
    - **Option 2 (Decode)**: Reveal a hidden message
      - Provide the path to an encoded image (e.g., `secret.png`)
      - The hidden message will be extracted and displayed
+
+---
+
+### 🔍 Metadata_Extractor.py
+
+A digital forensics tool that extracts **EXIF metadata** from image files.  
+It retrieves detailed information such as camera settings, date/time, and GPS coordinates if available.
+
+**Features:**
+
+- Extract camera make and model
+- Identify exposure settings (aperture, shutter speed, ISO)
+- Extract GPS coordinates and generate a Google Maps link
+- Support for common image formats (JPEG, PNG, etc.)
+
+> Requires **exifread** and **Pillow** libraries.
+
+**Usage:**
+
+1. Install dependencies:
+
+   ```powershell
+   pip install exifread Pillow
+   ```
+
+2. Run the script:
+
+   ```powershell
+   cd "Forensics\Metadata Extractor"
+   python Metadata_Extractor.py <path_to_image>
+   ```
 
 ---
 
@@ -279,7 +315,7 @@ python Web_Dir_Enum.py 127.0.0.1:8000 common_dir.txt
 
 - **Python 3.13**
 - **Nmap**
-- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`, `python-nmap` `requests`, `sys`, `scapy`, `pillow`)
+- Python libraries (`os`, `random`, `string`, `math`, `re`, `socket`, `hashlib`, `getpass`, `json`, `python-nmap`, `requests`, `sys`, `scapy`, `pillow`, `exifread`)
 
 ---
 
